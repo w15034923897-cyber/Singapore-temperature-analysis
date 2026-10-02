@@ -4,7 +4,7 @@
 
 基于 1960–2024 年新加坡年度气象数据，使用时间序列方法完成两件事：**预测未来气温**，并**检验降雨量能否解释或改善气温预测**。
 
-![Python](https://img.shields.io/badge/Python-3.x-blue) ![statsmodels](https://img.shields.io/badge/statsmodels-time%20series-green) ![Status](https://img.shields.io/badge/type-个人/课程项目-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.x-blue) ![statsmodels](https://img.shields.io/badge/statsmodels-time%20series-green) ![Status](https://img.shields.io/badge/type-课程项目-lightgrey)
 
 ---
 
@@ -28,11 +28,10 @@
 |---|---|
 | 时间范围 | 1960–2024，共 65 年，年度数据 |
 | 变量 | `Temp_Min`：年最低日均气温（℃）；`Rainfall`：年总降雨量（mm） |
-| 数据来源 | 【补充：如 SingStat / data.gov.sg，并附链接】 |
+| 数据来源 | 课程提供的数据集（原始来源：新加坡统计局 SingStat）  |
 | 数据质量 | 无缺失值，年份连续，无需插值 |
 | 训练 / 测试划分 | 训练集 1960–2014（55 年），测试集 2015–2024（10 年） |
 
-> 数据文件为 `sg_temperature_rainfall.csv`（【若数据允许公开再放入 `data/`，否则请在此说明获取方式】）。
 
 ## 3. 方法与流程
 
@@ -113,18 +112,26 @@
 
 ```
 ├── README.md
-├── code.ipynb              # 完整分析代码（建议按顺序运行）
+├── code.ipynb              # 完整分析代码
 ├── report.docx             # 完整分析报告（含图表解读）
-├── data/                   # 数据（视授权情况放置）
-│   └── sg_temperature_rainfall.csv
 └── images/                 # 输出图表
 ```
 
 ## 7. 如何运行
 
+## 7. 如何运行
+
+1. 克隆仓库并安装依赖：
 ```bash
-git clone https://github.com/【你的用户名】/【仓库名】.git
-cd 【仓库名】
+   git clone https://github.com/【你的用户名】/Singapore-temperature-analysis.git
+   cd Singapore-temperature-analysis
+   pip install pandas numpy scipy statsmodels scikit-learn matplotlib seaborn jupyter
+```
+2. 数据由课程提供，因版权原因未上传 。
+3. 运行 `code.ipynb`，图表会自动保存到输出文件夹。
+```bash
+git clone https://github.com/【你的用户名】/Singapore-temperature-analysis.git
+cd Singapore-temperature-analysis
 pip install pandas numpy scipy statsmodels scikit-learn matplotlib seaborn jupyter
 jupyter notebook code.ipynb
 ```
@@ -133,6 +140,6 @@ jupyter notebook code.ipynb
 
 ## 8. 说明
 
-本项目为【课程项目 / 个人学习项目】，仅用于学习与展示分析方法。
+本项目为课程项目，仅用于学习与展示分析方法。
 
-**联系方式**：【邮箱】 ｜ 【LinkedIn / 个人主页】
+**联系方式**：wangran002@suss.edu.sg ｜ 【LinkedIn / 个人主页】
