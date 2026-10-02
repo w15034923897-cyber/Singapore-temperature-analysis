@@ -60,7 +60,7 @@
 - 温度由 1960 年的 23.7℃ 升至 2024 年接近 25.9℃，累计上升约 **2.2℃**。
 - ADF 检验统计量 −0.4683，p = 0.8980，序列非平稳；ACF 缓慢衰减，需一阶差分（d = 1）。
 
-![温度序列](images/TempMin_(1960-2024).png)
+![温度序列](TempMin_28%1960-202429%.png)
 
 ### 4.2 ARIMA(2,1,0) 优于 SES 基准模型
 
@@ -71,7 +71,7 @@
 | SES（基准） | 1.6963 | 0.4365 | 0.5125 |
 | **ARIMA(2,1,0)** | **1.5381** | **0.3961** | **0.4826** |
 
-![SES vs ARIMA](images/SES_vs_ARIMA210_Forecast_Comparison.png)
+![SES vs ARIMA](SES_vs_ARIMA210_Forecast_Comparison.png)
 
 ### 4.3 2025–2030 预测
 
@@ -83,7 +83,7 @@
 | 2027 | 25.74 | 25.01 – 26.46 |
 | 2030 | 25.69 | 24.76 – 26.63 |
 
-![未来预测](images/ARIMA_MinTemp_Future_Forecast_2030.png)
+![未来预测](ARIMA_MinTemp_Future_Forecast_2030.png)
 
 ### 4.4 降雨量与温度几乎无关，且不能改善预测
 
@@ -97,7 +97,7 @@
 | ARIMA(2,1,0) | **0.4826** | **0.3961** |
 | ARIMAX（含降雨量） | 0.9013 | 0.8254 |
 
-![ARIMA vs ARIMAX](images/ARIMAX_vs_ARIMA_Performance_Comparison.png)
+![ARIMA vs ARIMAX](ARIMAX_vs_ARIMA_Performance_Comparison.png)
 
 **结论**：新加坡年度最低气温主要由长期趋势驱动，年际降雨的随机波动对气温预测几乎没有贡献。
 
@@ -112,12 +112,14 @@
 
 ```
 ├── README.md
-├── code.ipynb              # 完整分析代码
-├── report.docx             # 完整分析报告（含图表解读）
-└── images/                 # 输出图表
+├── code.ipynb                                  # 完整分析代码
+├── TempMin_(1960-2024).png                     # 以下为输出图表
+├── SES_vs_ARIMA210_Forecast_Comparison.png
+├── ARIMA_MinTemp_Future_Forecast_2030.png
+├── ARIMAX_vs_ARIMA_Performance_Comparison.png
+├── ARIMA210_FullRange_Backtest_Plot.png
+└──report.docx                                   # 完整分析报告（含图表解读）
 ```
-
-## 7. 如何运行
 
 ## 7. 如何运行
 
