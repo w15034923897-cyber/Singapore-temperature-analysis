@@ -113,7 +113,7 @@
 ```
 ├── README.md
 ├── code.ipynb                                  # 完整分析代码
-├── TempMin_(1960-2024).png                     # 以下为输出图表
+├── <img src="TempMin_(1960-2024).png" alt="温度序列" width="800">           # 以下为输出图表
 ├── SES_vs_ARIMA210_Forecast_Comparison.png
 ├── ARIMA_MinTemp_Future_Forecast_2030.png
 ├── ARIMAX_vs_ARIMA_Performance_Comparison.png
