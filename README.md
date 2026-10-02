@@ -123,14 +123,14 @@
 
 1. 克隆仓库并安装依赖：
 ```bash
-   git clone https://github.com/【你的用户名】/Singapore-temperature-analysis.git
+   git clone https://github.com/w15034923897-cyber/Singapore-temperature-analysis.git
    cd Singapore-temperature-analysis
    pip install pandas numpy scipy statsmodels scikit-learn matplotlib seaborn jupyter
 ```
 2. 数据由课程提供，因版权原因未上传 。
 3. 运行 `code.ipynb`，图表会自动保存到输出文件夹。
 ```bash
-git clone https://github.com/【你的用户名】/Singapore-temperature-analysis.git
+git clone https://github.com/w15034923897-cyber/Singapore-temperature-analysis.git
 cd Singapore-temperature-analysis
 pip install pandas numpy scipy statsmodels scikit-learn matplotlib seaborn jupyter
 jupyter notebook code.ipynb
